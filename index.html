@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  <script>
+    function selectionnerChiffre() {
+      var chiffre = document.getElementById("chiffre").value;
+      document.getElementById("resultat").innerHTML = "Le chiffre sélectionné est : " + chiffre;
+    }
+
+    function defilerChiffres() {
+      var chiffre = parseInt(document.getElementById("chiffre").value);
+      chiffre++;
+      document.getElementById("chiffre").value = chiffre;
+    }
+  </script>
+</head>
+<body>
+
+    <header>
+
+        <nav >
+            <div class="logo">
+                <img src="logo.png">
+            </div> 
+
+            <ul class="menu">
+                <li><a href="" class="nav-item" >Home</a></li>
+                <li><a href="" class="nav-item" >Shop</a></li>
+                <li><a href="" class="nav-item" >Concept</a></li>
+                <li><a href="" class="nav-item" >Contact</a></li>
+                <li><i class="fa-solid fa-lock"></i></li>
+            </ul>
+
+            <div class="toggle">
+                <i class="fa-solid fa-bars ouvrir"></i>
+                <i class="fa-solid fa-xmark fermer"></i>
+            </div> 
+            <!--<button type="button" aria-label="toggle curtain navigation" class="nav-toggler">
+                <span class="line l1"></span>
+                <span class="line l2"></span>
+                <span class="line l3"></span>
+            </button>-->
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="container1">
+            
+            <img src="un.png">
+            <img src="deux.png">
+            <img src="trois.png">
+            <img src="quatre.png">
+        </div>    
+        
+              
+
+        
+        <div class="container2">
+            <div>
+            <h2>T-Shirt L'école du Shop</h2>
+            <h4>MADE IN FRANCE</h4>
+            <p>Le T Shirt spécial concours le designer du Web. Cotton du kilimanjaro et soie sauvage. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, enim accusamus est reiciendis iure adipisci. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <select id="taille" >
+                    <option value="option0">Votre taille</option>
+                    <option value="option1">XS</option>
+                    <option value="option2">S</option>
+                    <option value="option3">M</option>
+                    <option value="option4">L</option>
+                    <option value="option5">XL</option>
+                    <option value="option6">XXL</option>
+                </select>
+            </div><br>
+            <div>
+                <select id="couleur">
+                    <option value="option0">Couleur</option>
+                    <option value="option1">1-Rose bonbon</option>
+                    <option value="option2">2-Gris</option>
+                    <option value="option3">3-Pourpre</option>
+                    <option value="option4">4-Bleu</option>
+                    
+                </select>
+            </div><br>
+
+            <div>
+                <div><label for="quantité" id="quantité">Quantité</label></div>
+                <input type="number" id="chiffre" name="chiffre" value="1" min="1">
+                <br><br>
+                <div id="resultat"></div>
+            </div>
+
+            <div class="contain">
+                <button class="bouton1">Ajouter au panier</button>
+                <button class="bouton2">Achat direct</button>
+            </div><br>
+            <div>
+                <p>à partir de <span>19,99 €</span></p>
+                <p>TTC*</p>
+            </div>
+
+        </div>
+        <div class="target">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+        </div>
+            
+    </div>
+
+    <footer>
+        <div class="cercles">
+            <div class="cercle">Fb</div>
+            <div class="cercle">In</div>
+            <div class="cercle">Tw</div>
+            <div class="cercle">Yo</div>
+        </div>
+        <div >
+            <ul class="menu2">
+                <li><a href="" class="foot-item ">Accueil</a></li>
+                <li><a href="" class="foot-item ">Services</a></li>
+                <li><a href="" class="foot-item ">A propos</a></li>
+                <li><a href="" class="foot-item ">Conditions générales</a></li>
+                <li><a href="" class="foot-item ">Nous rejoindre</a></li>
+              </ul>
+              
+        </div>
+
+        <div class="texte">
+            <div class="texte1">L'école du shop © 2022 tous droits réservés</div>
+            <div class="texte1">designed by Chopper ©</div>
+        </div>
+    </footer>
+    
+    <button type="button">a</button>
+    <script src="app.js"></script>
+    
+</body>
+</html>

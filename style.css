@@ -1,0 +1,387 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(41, 50, 70);
+}
+header
+{
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background:white;
+    color: black;
+    
+}
+nav
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.toggle
+{
+    display: none;
+}
+
+.menu li a
+{
+    color: black;
+    text-decoration: none;
+}
+
+
+.container {
+  display: flex;
+  position: relative;
+  /*border: 1px solid black;*/
+  border-radius: 10px;
+  width: 48%;
+  height: 575px;
+  top: 170px;
+  flex-wrap: wrap; 
+}
+
+
+
+.container1 {
+  display: flex;
+  /*border: 2px solid red;*/
+  border-radius: 10px;
+  width: 50%; 
+  height: 100%;
+  overflow-x: scroll;
+  scrollbar-color: #000000 rgb(143, 152, 168);
+}
+
+
+.container2 {
+  
+  /*border: 2px solid red;*/
+  border-radius: 10px;
+  width: 50%; 
+  height: 100%;
+  background-color: white;
+  padding-left: 20px;
+  padding-top: 35px;
+  
+}
+
+
+.bouton1, .bouton2 {
+    background-color: rgb(245, 195, 148);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    /*padding: 10px 20px;*/
+    cursor: pointer;
+    width: 145px;
+    height: 30px;
+    font-size: 1em;
+}
+
+.bouton2
+{
+  position: relative;
+  margin-left: 30px;
+}
+
+.bouton2:hover {
+  box-shadow: -10px -3px green;
+  color: black;
+  font-style: italic;
+}
+
+.bouton1:hover {
+  box-shadow: -10px -3px green;
+  color: black;
+  transition:box-shadow 0.8s,color 0.8s;
+  font-style: italic;
+}
+  
+
+.menu 
+{
+  display: flex;
+  width: 560px;
+  list-style: none;
+  justify-content: space-around;
+  
+}
+  
+.nav-item {
+  position: relative;
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+    
+}
+  
+.nav-item:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+}
+  
+.nav-item a {
+  display: inline-block;
+  padding: 10px;
+}
+
+h2
+{
+  font-weight: bold;
+}
+
+p
+{
+  font-size: 17px;
+}
+
+select
+{
+ width: 153px;
+ 
+}
+
+span
+{
+  font-weight: bold;
+}
+#chiffre
+{
+  width: 55px;
+  height: 33px;
+  border-radius: 10px;
+  background-color:rgb(248, 215, 221) ;
+  
+}
+
+#chiffre:hover
+{
+  background-color: green;
+}
+
+#quantité
+{
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgb(153, 162, 170);
+}
+
+.target
+{
+  /*border: 2px solid black;*/
+  width: 445px;
+  height: 65px;
+  color: rgb(41, 50, 70);
+  display: flex;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+
+.number
+{
+  border: 1px solid rgb(88, 99, 122);
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+  padding-top: 2px;
+  background-color: rgb(88, 99, 122);
+  transition: width 0.3s ease-in-out;
+}
+
+.number:hover
+{
+  color: white;
+  background-color:rgb(62, 68, 82) ;
+  border: 1px solid rgb(62, 68, 82);
+  transition:background-color 0.5s ;
+  transform: scaleX(1);
+  cursor: pointer;
+}
+
+
+  
+footer
+{
+    position: relative;
+    width: 100%;
+    height: 36vh;
+    bottom: -255px;
+    background:rgba(8, 8, 8, 0.575);
+    color: white;
+    
+}
+
+.cercles
+{
+  /*border: 2px solid black;*/
+  width: 247px;
+  height: 65px;
+  color: #333;
+  display: flex;
+  font-size: 1.2em;
+  font-weight: lighter;
+  margin-left: 43%;
+  padding-top: 25px;
+}
+
+.cercle
+{
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  padding-top: 2px;
+  /*background-color:rgba(8, 8, 8, 0.575);*/
+  font-size: 23px;
+  
+}
+
+.cercle:hover
+{
+  background-color: black;
+  transition:background-color 1s linear,with 1s;
+  cursor: pointer;
+}
+
+
+.menu2 ,.texte
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  color: white;
+  flex-direction: column;
+  margin-top: 18px;
+  
+  
+}
+.menu2
+{
+  /*border: 1px solid red;*/
+  height: 150px;
+  justify-content: space-between;
+}
+
+.texte1
+{
+  font-weight: 55px;
+}
+
+.texte
+{
+  /*border: 1px solid red;*/
+  font-size: 11px;
+  color: rgb(230, 223, 223);
+  font-weight: lighter;
+}
+.foot-item
+{
+  color: #333;
+  font-size: 17px;
+  text-decoration: none;
+      
+}
+
+.foot-item:hover
+{
+  background-color: black;
+  transition: background-color 1s,border 1s,transform 1s;
+  color: #333;
+  border-radius: 25px;
+  outline-style: hidden;
+  text-decoration: none;
+  transform-origin: left;
+}
+
+
+/*.foot-item {
+  color: #333;
+  font-size: 17px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, black 50%, white 50%);
+  background-position: -100% center;
+  background-size: 200% 100%;
+  transition: background-position 1s;
+}
+
+.foot-item:hover {
+  background-position: 100% center;
+}*/
+
+ 
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  
+}
+button:hover {
+  color: #e8e8e8;
+}
+ 
+ button:hover::before {
+  width: 100%;
+}
+  
+@media all and (max-width:991px)
+{
+    .toggle{display: block;font-size: 2rem;cursor: pointer;position: relative;z-index: 20;}
+    .logo{position: relative;z-index: 20;}
+    .ouvrir{display: block;}
+    .fermer{display: none;}
+    .open .ouvrir{display: none;}
+    .open .fermer{display: block;}
+    .menu{ position: absolute;top:0;left: 0;width: 100%; height: 100vh;background:white;flex-direction: column;padding: 2rem;justify-content: space-around;transform:translateX(-left)}
+    .open .menu { transform: translateX(0);}
+}
