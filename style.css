@@ -122,6 +122,7 @@ nav
   text-decoration: none;
   color: #333;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
 }
   
 .nav-item::before {
@@ -266,8 +267,9 @@ footer
 .cercle:hover
 {
   background-color: black;
-  transition:background-color 1s linear,with 1s;
+  transition:background-color 1s ease-out,with 1s ease-in,color 0.7s ease-in-out;
   cursor: pointer;
+  color: rgb(222, 242, 243);
 }
 
 
@@ -308,14 +310,14 @@ footer
   color: #333;
   font-size: 17px;
   text-decoration: none;
-      
+  padding: 5px;    
 }
 
 .foot-item:hover
 {
   background-color: black;
-  transition: background-color 1s,border 1s,transform 1s;
-  color: #333;
+  transition: background-color 0.5s ease-in-out,border 1s ease-in,transform 1s ease-out,color 1s ease-out;
+  color: rgb(216, 226, 226);
   border-radius: 25px;
   outline-style: hidden;
   text-decoration: none;
